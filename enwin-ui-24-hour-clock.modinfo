@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Mod id="enwin-ui-24-hour-clock" version="13"
+	xmlns="ModInfo">
+	<Properties>
+		<Name>Enwin's UI 24 hour clock</Name>
+		<Description>Use 24 hour clock in the top bar</Description>
+		<Authors>enwin</Authors>
+		<Package>Mod</Package>
+		<AffectsSavedGames>0</AffectsSavedGames>
+	</Properties>
+	<Dependencies>
+		<Mod id="base-standard" title="LOC_MODULE_BASE_STANDARD_NAME" />
+	</Dependencies>
+	<ActionCriteria>
+		<Criteria id="always">
+			<AlwaysMet></AlwaysMet>
+		</Criteria>
+	</ActionCriteria>
+	<ActionGroups>
+		<ActionGroup id="game-enwin-ui-24-hour-clock" scope="game" criteria="always">
+			<Actions>
+				<UIScripts>
+					<Item>modules/ui/system-bar/panel-system-bar-24h.js</Item>
+				</UIScripts>
+			</Actions>
+		</ActionGroup>
+	</ActionGroups>
+</Mod>
